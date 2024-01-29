@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chappy Math</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> -->
+    <!-- https://docs.mathjax.org/en/latest/web/start.html -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+  </head>
+  <body>
+
+<div id="nav" class="hide">
+  <ul>
+<!-- li data-navlink -->
+  </ul>
+</div>
+
+<div id="site">
+
+https://latex.codecogs.com/eqneditor/editor.php
+https://docs.mathjax.org/en/latest/basic/mathematics.html
+
+Task
+
+<!-- <div id="markdown1">
+  
+# Marked in the browser
+
+## Rendered by **tacos**
+
+</div> -->
+
+<!--       
+research for notation
+https://latex.codecogs.com/eqneditor/editor.php
+https://docs.mathjax.org/en/latest/basic/mathematics.html
+<p>When \(sum_{n=0}^{r}g) \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = \sum {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+
+ -->
+ 
+ 
+  <article data-nav="absolute-value">
+    <!-- <aside>
+      <img src="images/snail-walk-target-2.jpg" alt="">
+    </aside> -->
+    <section>
+      <h3>FIX:</h3>
+      <h2>√a Square root</h2>
+      <p><tag-code>_check _square </tag-code> </p>
+
+      <p>b^2</p>
+
+      <p>$$ \sqrt{4} $$</p>
+      <inline-code>latex: \sqrt{4} </inline-code>
+      <pre>
+        var g = Math.sqrt(4.1);
+        console.log(g); // 2.0248456731316584
+      </pre>
+      
+      <ul>
+        <!-- <li><a href="https://www.desmos.com/calculator/f4vpdulc0p">https://www.desmos.com/calculator/f4vpdulc0p</a></li> -->
+      </ul>
+      
+      
+    </section>
+  </article>
+ 
+  <article data-nav="absolute-value">
+    <!-- <aside>
+      <img src="images/snail-walk-target-2.jpg" alt="">
+    </aside> -->
+    <section>
+      <h2>|a| Absolute Value</h2>
+      <p><tag-code>_| _I _i</tag-code> </p>
+      <!-- <p>∑ xi= x1+x2+...+xn</p> -->
+      <!-- <p>varients ∑ σ ς</p> -->
+      <p>Force negative number into positive value. Also known as unsigned and signed. So signed <em>-a</em> becomes <em>a</em> </p>
+
+      <p>$$ \left |a  \right | $$</p>
+      <inline-code>latex: \left |a  \right |</inline-code>
+      <pre>
+        var g = Math.abs(-2);
+        console.log(g); // 2
+      </pre>
+      
+      <ul>
+        <!-- <li><a href="https://www.desmos.com/calculator/f4vpdulc0p">https://www.desmos.com/calculator/f4vpdulc0p</a></li> -->
+      </ul>
+      
+      
+    </section>
+  </article>
+
+
+ 
+  <article data-nav="summation-loop">
+    <!-- <aside>
+      <img src="images/snail-walk-target-2.jpg" alt="">
+    </aside> -->
+    <section>
+      <h4>FIX:</h4>
+      <h2>∑ Summation Sigma</h2>
+      <p><tag-code>_e _E ∑</tag-code> </p>
+      <p>∑ xi= x1+x2+...+xn</p>
+      <p>varients ∑ σ ς</p>
+      <p>A version of a loop that sums the right side.</p>
+      <p>Top or <em>r</em> is the max or limit of the loop</p>
+      <p><em>g</em> is the value that will be summed each loop</p>
+      <p><em>n</em> is the loops starting position </p>
+      
+      <p>tacos $$ \sum_{n=1}^{r}g $$</p>
+      <inline-code>latex: \sum_{n=1}^{r}g</inline-code>
+      <pre>
+        
+        var r = 3; // top or max
+        var g = 2;
+        var total = g; // when i in the loop equals or starts at 1
+        
+        // note if total is 0 zero we need to add a +1 to the loop limit so r+1 
+        // needed to get the full correct value
+        for (var n = 0; n < r; n++) {
+          total += g;
+          console.log(total);
+        }
+        console.log("total", total);
+
+      </pre>
+      
+      <p>Or simply \( g * r = 8\) </p>
+      
+      <p>There is a lot to be said about this funky E. For one its quite emposing to look at when digging through formulas. Another is when hand writing it, quickly scribling it makes for a 3 of sorts.</p>
+      
+      <ul>
+        <li><a href="https://www.desmos.com/calculator/f4vpdulc0p">https://www.desmos.com/calculator/f4vpdulc0p</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential</a></li>
+        <li><a href="https://help.desmos.com/hc/en-us/articles/207315493-Summation">https://help.desmos.com/hc/en-us/articles/207315493-Summation</a></li>
+        <li><a href="https://www.youtube.com/watch?v=XJkIaw2e1Pw">https://www.youtube.com/watch?v=XJkIaw2e1Pw</a></li>
+      </ul>
+      
+      
+    </section>
+  </article>
+
+
+    <article data-nav="exponential-number">
+      <!-- <aside>
+        <img src="images/snail-walk-target-2.jpg" alt="">
+      </aside> -->
+      <section>
+        <h4>FIX:</h4>
+        <h2>Exponential number</h2>
+        <p><tag-code>_e</tag-code> When you get a number like this 1.2246467991473532e-16 it effectively means 0</p>
+        <p>1.2246467991473532e-16</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential</a></p>
+      </section>
+    </article>
+
+    <article data-nav="theta">
+      <!-- <aside>
+        <img src="images/snail-walk-target-2.jpg" alt="">
+      </aside> -->
+      <section>
+        <h4>FIX:</h4>
+        <h2>θ Θ Theta</h2>
+        <p><tag-code>_0 _o _O</tag-code> Greek letter θ (theta). Symbol used in sin cos tan etc as a measured angle.</p>
+        <p>sin(θ) sin(1.2) sin(π)</p>
+        <p>You can use anything, its just typically used</p>
+      </section>
+    </article>
+
+
+
+    <article data-nav="sin-cos">
+      <!-- <aside>
+        <img src="images/snail-walk-target-2.jpg" alt="">
+      </aside> -->
+      <section>
+        <h2>Sine sin(θ)</h2>
+        <p><tag-code>_sin</tag-code> Gives an oscillating value between 0 to 1 to 0 to -1 to 0</p>
+        <p>You tend to feed it and its cousin Cosine _cos an increasing value like Time or _PI π</p>
+        <p>When the value reaches PI π you have traversed 0 to 1 to 0</p>
+        <p>One of the most common uses of the value is to assign a 2d/3d object its position y value.</p>
+        
+        <p><inline-code>Math.sin(0.1)</inline-code></p>
+        <pre>
+        var count = 20;
+        var ratio = Math.PI * 2 / count;
+        
+        for (var i = 0; i < count+1; i++) {
+          var theta = ratio * i;
+          console.log("theta", theta, " : sin", Math.sin(theta));
+        }
+        </pre>
+        
+        
+        <h2>Cosine cos(θ)</h2>
+        <p><tag-code>_cos</tag-code> Gives an oscillating value between 1 to 0 to -1 to 0 to 1</p>
+        <p>Used the same way as sin(θ)</p>
+        <p>When the value reaches PI π you have traversed 1 to 0 to -1</p>
+        <p>Same as sin in 2d/3d object but for position x value.</p>
+        
+        <p><inline-code>Math.cos(0.1)</inline-code></p>
+        <pre>
+        var count = 20;
+        var ratio = Math.PI * 2 / count;
+        
+        for (var i = 0; i < count+1; i++) {
+          var theta = ratio * i;
+          console.log("theta", theta, " : sin", Math.cos(theta));
+        }
+        </pre>
+        
+        
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Sine_and_cosine">https://en.wikipedia.org/wiki/Sine_and_cosine</a></li>
+          <li><a href="https://www.mathsisfun.com/sine-cosine-tangent.html">https://www.mathsisfun.com/sine-cosine-tangent.html</a></li>
+        </ul>
+        
+        
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols">https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols</a></li>
+          <li><a href="https://www.rapidtables.com/math/symbols/Basic_Math_Symbols.html">https://www.rapidtables.com/math/symbols/Basic_Math_Symbols.html</a></li>
+        </ul>
+
+      </section>
+    </article>
+
+
+
+
+
+
+</div>
+<!-- #site -->
+
+<div id="show-image" class="hidden">
+  <img src="images/rig1rotations-d.jpg" alt="">
+</div>
+<!-- <script src="index.js"></script> -->
+
+<!-- some custom elements -->
+<script type="text/javascript">
+class InlineCode extends HTMLSpanElement {
+  constructor() {
+    // Always call super first in constructor
+    super();
+
+    // Element functionality written in here
+  }
+}
+customElements.define("inline-code", InlineCode, { extends: "span" });
+
+class TagCode extends HTMLSpanElement {
+  constructor() {
+    // Always call super first in constructor
+    super();
+
+    // Element functionality written in here
+  }
+}
+customElements.define("tag-code", TagCode, { extends: "span" });
+
+</script>
+
+
+<script type="text/javascript">
+
+  // add image links
+  // build crude lightbox
+  var images = document.querySelectorAll("#site img");
+  for (var i = 0; i < images.length; i++) {
+    var pick = images[i];
+    var link = document.createElement('a');
+
+    const pathArray = pick.src.split("/");
+    var imagePath = pathArray[pathArray.length - 1];
+    imagePath = "images/"+imagePath;
+    link.setAttribute('href', imagePath);
+    // link.setAttribute('href', "#");
+
+    link.appendChild(pick.cloneNode(true));
+    pick.parentNode.replaceChild(link, pick);
+
+    link.onclick = (ev) => {
+      ev.preventDefault();
+
+      const pathArray = ev.target.src.split("/");
+      var imagePath = pathArray[pathArray.length - 1];
+      imagePath = "images/"+imagePath;
+
+
+      // console.log(imagePath);
+      var lightbox = document.getElementById("show-image");
+      var im = lightbox.querySelector("img");
+      im.src = imagePath;
+      lightbox.classList.remove("hidden");
+    };
+  }
+
+
+  // var lightbox = document.getElementById('show-image');
+  // lightbox.onclick = (ev) => {
+  //   lightbox.classList.add("hidden");
+  // }
+
+
+
+  //
+  // build sidebar nav
+  //
+  var navItems = document.querySelectorAll('[data-nav]');
+  var navUL = document.querySelector("#nav ul");
+  for (var i = 0; i < navItems.length; i++) {
+    var li = document.createElement("li");
+    var path = navItems[i].getAttribute("data-nav");
+    var cc = path;
+    cc = cc.charAt(0).toUpperCase() + cc.slice(1);
+    cc = cc.replace("-"," ");
+    li.innerText = cc;
+    li.setAttribute("data-navlink", path);
+    li.addEventListener( 'click',  scrollToNavItem);
+    navUL.append(li);
+  }
+
+  function scrollToNavItem(ev) {
+    ev.preventDefault();
+    // updateNav(true);
+
+    var path = ev.target.getAttribute("data-navlink");
+    // console.log("path", path);
+
+    var item = document.querySelector(`[data-nav=${path}]`);
+    // console.log("item", item);
+
+    item.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+  }
+
+  //
+  // Add in some auto highlighting
+  // needs work
+  var minInView = 160;
+  var maxInView = 0;
+
+  function isInView(element) {
+    const rect = element.getBoundingClientRect();
+
+    var v = window.innerHeight - rect.top;
+    if(v >= minInView && rect.top > 0 ){
+      return true;
+    }
+    return false;
+
+  };
+
+  var navItems = document.querySelectorAll('[data-nav]');
+  var navPicked = null;
+
+  function updateNav(force){
+    if(navPicked){
+      var mm = document.querySelector("#nav").querySelector(`[data-navlink=${navPicked.dataset.nav}]`);
+      if (mm) {
+        mm.classList.remove('active');
+      }
+    }
+    var picked = null;
+    for (var i = 0; i < navItems.length; i++) {
+      if( force || isInView(navItems[i]) ){
+        navPicked = navItems[i];
+        break;
+      }
+    }
+    if(navPicked){
+      // var tt = navPicked.dataset.nav;
+      var mm = document.querySelector("#nav").querySelector(`[data-navlink=${navPicked.dataset.nav}]`);
+      if(mm){
+        mm.classList.add('active');
+
+      }
+
+    }
+  }
+
+  // we dont really need this
+  // its distracting
+  // document.addEventListener("scroll", () => {
+  //   updateNav();
+  // });
+
+</script>
+
+
+<!-- <script>
+  var markdown1 = document.getElementById('markdown1');
+  // debugger
+  var tt = markdown1.innerText;
+  markdown1.innerText = "";
+  // tt = '# Marked in Node.js\n\nRendered by **marked**.';
+  markdown1.innerHTML = marked.parse(tt);
+</script> -->
+
+  </body>
+</html>
