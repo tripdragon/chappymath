@@ -86,8 +86,8 @@ body{
 }
 
 #site img{
-  width: auto;
-  width: 100%;
+  /* width: auto; */
+  /* width: 100%; */
   /* max-width: 400px; */
 }
 
@@ -219,4 +219,9 @@ pre {
 #site article a:hover{
   color: green;
   text-decoration: underline;
+}
+
+
+img.thb-a{
+  max-width: 400px;
 }

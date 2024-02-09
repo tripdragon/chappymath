@@ -17,6 +17,9 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
   </head>
   <body>
 
@@ -54,9 +57,71 @@ https://docs.mathjax.org/en/latest/basic/mathematics.html
 $$x = \sum {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
 
  -->
+
+ 
+  <article data-nav="fofx-value">
+    <!-- <aside>
+      <img src="images/snail-walk-target-2.jpg" alt="">
+    </aside> -->
+    <section>
+      <h3>FIX:</h3>
+      <h2>f(x) f of x</h2>
+      <p><tag-code>_x</tag-code> </p>
+
+      <p>f(x)</p>
+
+      <!-- <p>$$ \sqrt{4} $$</p> -->
+      <!-- <inline-code>latex: \sqrt{4} </inline-code> -->
+      <pre>
+        // x^2
+        
+        for (var x = 0; x < 11; x++) {
+          console.log(x, x*x );
+        }
+        0 0
+        1 1
+        2 4
+        3 9
+        4 16
+        5 25
+        6 36
+        7 49
+        8 64
+        9 81
+        10 100
+        
+        // 2x
+        
+        for (var x = 0; x < 11; x++) {
+          console.log(x, 2*x );
+        }
+        0 0
+        1 2
+        2 4
+        3 6
+        4 8
+        5 10
+        6 12
+        7 14
+        8 16
+        9 18
+        10 20
+        
+      </pre>
+      
+      <p><img class="thb-a" src="./images/x2_dir.jpg"/></p>
+      
+      <ul>
+        <!-- <li><a href="https://www.desmos.com/calculator/f4vpdulc0p">https://www.desmos.com/calculator/f4vpdulc0p</a></li> -->
+      </ul>
+      
+      
+    </section>
+  </article>
  
  
-  <article data-nav="absolute-value">
+ 
+  <article data-nav="sqrt-value">
     <!-- <aside>
       <img src="images/snail-walk-target-2.jpg" alt="">
     </aside> -->
@@ -65,14 +130,30 @@ $$x = \sum {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
       <h2>√a Square root</h2>
       <p><tag-code>_check _square </tag-code> </p>
 
-      <p>b^2</p>
+      <p>√x</p>
 
       <p>$$ \sqrt{4} $$</p>
       <inline-code>latex: \sqrt{4} </inline-code>
       <pre>
-        var g = Math.sqrt(4.1);
-        console.log(g); // 2.0248456731316584
+        console.log( Math.sqrt(4.1) ); // 2.0248456731316584
+        
+        for (var x = 0; x < 11; x++) {
+          console.log(x, Math.sqrt(x) );
+        }
+        0 0
+        1 1
+        2 1.4142135623730951
+        3 1.7320508075688772
+        4 2
+        5 2.23606797749979
+        6 2.449489742783178
+        7 2.6457513110645907
+        8 2.8284271247461903
+        9 3
+        10 3.1622776601683795
       </pre>
+      
+      <p><img class="thb-a" src="./images/sqrt_x.jpg"/></p>
       
       <ul>
         <!-- <li><a href="https://www.desmos.com/calculator/f4vpdulc0p">https://www.desmos.com/calculator/f4vpdulc0p</a></li> -->
